@@ -36,6 +36,9 @@ app.get('/', (_req: express.Request, res: express.Response) => {
   res.send("Hello World");
 });
 
+app.get('/', (_req, res) => {
+  res.send("Hello World");
+});  
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
